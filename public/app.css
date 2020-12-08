@@ -1,0 +1,112 @@
+    body {
+        background: #DDEFBB;
+        font-family: 'Manrope', sans-serif;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 55px;
+        font-weight: 200;
+        margin-bottom: 0;
+        padding-top: 50px;
+        animation: head 1s ease-out 0.1s forwards;
+        opacity: 0;
+    }
+    
+    @keyframes head {
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    span {
+        font-weight: 900;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 4px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-weight: 100;
+        color: rgb(121, 121, 121);
+        margin-top: 10px;
+        animation: head2 2s ease-out 0.3s forwards;
+        opacity: 0;
+    }
+    
+    @keyframes head2 {
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .form {
+        padding: 30px 0 20px 0;
+    }
+    
+    input {
+        margin: 0 auto;
+        display: block;
+        border: none;
+        outline: none;
+        width: 700px;
+        background: #DDEFBB;
+        font-size: 20px;
+        padding: 10px 5px 5px 10px;
+        border-bottom: 1px solid rgb(179, 179, 179);
+        animation: input 2s ease-out 0.3s forwards;
+        opacity: 0;
+    }
+    
+    @keyframes input {
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .list {
+        margin: 0 auto;
+        width: 750px;
+    }
+    
+    .task {
+        padding: 13px 2px 13px 14px;
+        font-family: 'Fredoka One', cursive;
+        font-size: 18px;
+        letter-spacing: 1px;
+        animation: list 2.5s ease-in-out 0.4s forwards;
+        opacity: 0;
+    }
+    
+    @keyframes list {
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .task span {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 20px 0 0;
+        float: right;
+        opacity: 0;
+        color: red;
+        transition: ease-in-out 0.4s 0.1s;
+    }
+    
+    .task span:hover {
+        opacity: 1;
+    }
+    
+    .task:hover {
+        background-color: #d1e0b4;
+        border-radius: 5px;
+        transition-property: background-color, border-radius;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.3s, 0.6s;
+        transition-delay: 0.1s, 0.1s;
+    }
+    
+    .done {
+        color: grey;
+        text-decoration: line-through;
+    }
